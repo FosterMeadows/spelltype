@@ -1,0 +1,1829 @@
+[
+  {
+    "word": "cat",
+    "definition": "a small domesticated carnivorous mammal",
+    "difficulty": 1
+  },
+  {
+    "word": "dog",
+    "definition": "a domesticated carnivorous mammal that typically has a long snout",
+    "difficulty": 1
+  },
+  {
+    "word": "bird",
+    "definition": "a warm-blooded egg-laying vertebrate distinguished by feathers",
+    "difficulty": 1
+  },
+  {
+    "word": "fish",
+    "definition": "an aquatic animal that has gills",
+    "difficulty": 1
+  },
+  {
+    "word": "cow",
+    "definition": "a large domesticated ungulate commonly kept for milk or beef",
+    "difficulty": 1
+  },
+  {
+    "word": "apple",
+    "definition": "a round fruit with red or green skin",
+    "difficulty": 1
+  },
+  {
+    "word": "ball",
+    "definition": "a spherical object used in games and sports",
+    "difficulty": 1
+  },
+  {
+    "word": "sun",
+    "definition": "the star at the center of the solar system",
+    "difficulty": 1
+  },
+  {
+    "word": "star",
+    "definition": "a fixed luminous point in the night sky",
+    "difficulty": 1
+  },
+  {
+    "word": "book",
+    "definition": "a set of written or printed pages bound together",
+    "difficulty": 1
+  },
+  {
+    "word": "chair",
+    "definition": "a piece of furniture for sitting",
+    "difficulty": 1
+  },
+  {
+    "word": "table",
+    "definition": "a piece of furniture with a flat top and one or more legs",
+    "difficulty": 1
+  },
+  {
+    "word": "pen",
+    "definition": "a writing instrument that uses ink",
+    "difficulty": 1
+  },
+  {
+    "word": "cup",
+    "definition": "a small bowl-shaped container for drinking",
+    "difficulty": 1
+  },
+  {
+    "word": "shoe",
+    "definition": "a covering for the foot, typically made of leather or canvas",
+    "difficulty": 1
+  },
+  {
+    "word": "house",
+    "definition": "a building for human habitation",
+    "difficulty": 1
+  },
+  {
+    "word": "road",
+    "definition": "a wide way leading from one place to another",
+    "difficulty": 1
+  },
+  {
+    "word": "tree",
+    "definition": "a woody perennial plant, typically having a single stem or trunk",
+    "difficulty": 1
+  },
+  {
+    "word": "flower",
+    "definition": "the seed-bearing part of a plant, often brightly colored",
+    "difficulty": 1
+  },
+  {
+    "word": "moon",
+    "definition": "the natural satellite of the earth",
+    "difficulty": 1
+  },
+  {
+    "word": "bottle",
+    "definition": "a container with a narrow neck used for storing liquids",
+    "difficulty": 1
+  },
+  {
+    "word": "key",
+    "definition": "a small piece of metal used to open or close a lock",
+    "difficulty": 1
+  },
+  {
+    "word": "balloon",
+    "definition": "a brightly colored rubber sac that can be inflated with air",
+    "difficulty": 1
+  },
+  {
+    "word": "car",
+    "definition": "a road vehicle typically with four wheels, powered by an engine",
+    "difficulty": 1
+  },
+  {
+    "word": "bus",
+    "definition": "a large motor vehicle carrying passengers by road",
+    "difficulty": 1
+  },
+  {
+    "word": "cake",
+    "definition": "a sweet baked dessert usually frosted",
+    "difficulty": 1
+  },
+  {
+    "word": "frog",
+    "definition": "a small tailless amphibian with a short body",
+    "difficulty": 1
+  },
+  {
+    "word": "duck",
+    "definition": "a waterbird with a broad blunt bill",
+    "difficulty": 1
+  },
+  {
+    "word": "pig",
+    "definition": "an omnivorous domesticated hoofed mammal with a snout",
+    "difficulty": 1
+  },
+  {
+    "word": "rain",
+    "definition": "water that falls from the clouds as drops",
+    "difficulty": 1
+  },
+  {
+    "word": "snow",
+    "definition": "atmospheric water vapor frozen into ice crystals",
+    "difficulty": 1
+  },
+  {
+    "word": "desk",
+    "definition": "a piece of furniture with a flat surface for working",
+    "difficulty": 1
+  },
+  {
+    "word": "clock",
+    "definition": "a device used to measure and indicate time",
+    "difficulty": 1
+  },
+  {
+    "word": "cat",
+    "definition": "a small domesticated carnivorous mammal",
+    "difficulty": 1
+  },
+  {
+    "word": "dog",
+    "definition": "a domesticated carnivorous mammal that typically has a long snout",
+    "difficulty": 1
+  },
+  {
+    "word": "bird",
+    "definition": "a warm-blooded egg-laying vertebrate distinguished by feathers",
+    "difficulty": 1
+  },
+  {
+    "word": "fish",
+    "definition": "an aquatic animal that has gills",
+    "difficulty": 1
+  },
+  {
+    "word": "cow",
+    "definition": "a large domesticated ungulate commonly kept for milk or beef",
+    "difficulty": 1
+  },
+  {
+    "word": "apple",
+    "definition": "a round fruit with red or green skin",
+    "difficulty": 1
+  },
+  {
+    "word": "ball",
+    "definition": "a spherical object used in games and sports",
+    "difficulty": 1
+  },
+  {
+    "word": "sun",
+    "definition": "the star at the center of the solar system",
+    "difficulty": 1
+  },
+  {
+    "word": "star",
+    "definition": "a fixed luminous point in the night sky",
+    "difficulty": 1
+  },
+  {
+    "word": "book",
+    "definition": "a set of written or printed pages bound together",
+    "difficulty": 1
+  },
+  {
+    "word": "chair",
+    "definition": "a piece of furniture for sitting",
+    "difficulty": 1
+  },
+  {
+    "word": "table",
+    "definition": "a piece of furniture with a flat top and one or more legs",
+    "difficulty": 1
+  },
+  {
+    "word": "pen",
+    "definition": "a writing instrument that uses ink",
+    "difficulty": 1
+  },
+  {
+    "word": "cup",
+    "definition": "a small bowl-shaped container for drinking",
+    "difficulty": 1
+  },
+  {
+    "word": "shoe",
+    "definition": "a covering for the foot, typically made of leather or canvas",
+    "difficulty": 1
+  },
+  {
+    "word": "house",
+    "definition": "a building for human habitation",
+    "difficulty": 1
+  },
+  {
+    "word": "road",
+    "definition": "a wide way leading from one place to another",
+    "difficulty": 1
+  },
+  {
+    "word": "tree",
+    "definition": "a woody perennial plant, typically having a single stem or trunk",
+    "difficulty": 1
+  },
+  {
+    "word": "flower",
+    "definition": "the seed-bearing part of a plant, often brightly colored",
+    "difficulty": 1
+  },
+  {
+    "word": "moon",
+    "definition": "the natural satellite of the earth",
+    "difficulty": 1
+  },
+  {
+    "word": "bottle",
+    "definition": "a container with a narrow neck used for storing liquids",
+    "difficulty": 1
+  },
+  {
+    "word": "key",
+    "definition": "a small piece of metal used to open or close a lock",
+    "difficulty": 1
+  },
+  {
+    "word": "balloon",
+    "definition": "a brightly colored rubber sac that can be inflated with air",
+    "difficulty": 1
+  },
+  {
+    "word": "car",
+    "definition": "a road vehicle typically with four wheels, powered by an engine",
+    "difficulty": 1
+  },
+  {
+    "word": "bus",
+    "definition": "a large motor vehicle carrying passengers by road",
+    "difficulty": 1
+  },
+  {
+    "word": "cake",
+    "definition": "a sweet baked dessert usually frosted",
+    "difficulty": 1
+  },
+  {
+    "word": "frog",
+    "definition": "a small tailless amphibian with a short body",
+    "difficulty": 1
+  },
+  {
+    "word": "duck",
+    "definition": "a waterbird with a broad blunt bill",
+    "difficulty": 1
+  },
+  {
+    "word": "pig",
+    "definition": "an omnivorous domesticated hoofed mammal with a snout",
+    "difficulty": 1
+  },
+  {
+    "word": "rain",
+    "definition": "water that falls from the clouds as drops",
+    "difficulty": 1
+  },
+  {
+    "word": "snow",
+    "definition": "atmospheric water vapor frozen into ice crystals",
+    "difficulty": 1
+  },
+  {
+    "word": "desk",
+    "definition": "a piece of furniture with a flat surface for working",
+    "difficulty": 1
+  },
+  {
+    "word": "clock",
+    "definition": "a device used to measure and indicate time",
+    "difficulty": 1
+  },
+
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+  {
+    "word": "elephant",
+    "definition": "a large herbivorous mammal with a trunk",
+    "difficulty": 2
+  },
+  {
+    "word": "giraffe",
+    "definition": "a tall African mammal with a very long neck",
+    "difficulty": 2
+  },
+  {
+    "word": "kangaroo",
+    "definition": "a large plant-eating marsupial with a strong tail",
+    "difficulty": 2
+  },
+  {
+    "word": "dolphin",
+    "definition": "a small, intelligent marine mammal known for its playfulness",
+    "difficulty": 2
+  },
+  {
+    "word": "crocodile",
+    "definition": "a large predatory semiaquatic reptile with a long snout",
+    "difficulty": 2
+  },
+  {
+    "word": "airplane",
+    "definition": "a powered flying vehicle with fixed wings",
+    "difficulty": 2
+  },
+  {
+    "word": "bicycle",
+    "definition": "a vehicle composed of two wheels held in a frame",
+    "difficulty": 2
+  },
+  {
+    "word": "computer",
+    "definition": "an electronic device for storing and processing data",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "definition": "an opening in a wall or door fitted with glass",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "definition": "a reflective surface that forms an image",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "definition": "a plot of ground for growing flowers, fruits, or vegetables",
+    "difficulty": 2
+  },
+  {
+    "word": "ocean",
+    "definition": "a vast body of salt water covering most of the earth",
+    "difficulty": 2
+  },
+  {
+    "word": "mountain",
+    "definition": "a large natural elevation of the earth's surface",
+    "difficulty": 2
+  },
+  {
+    "word": "desert",
+    "definition": "a barren area of land with little precipitation",
+    "difficulty": 2
+  },
+  {
+    "word": "forest",
+    "definition": "a large area covered chiefly with trees",
+    "difficulty": 2
+  },
+  {
+    "word": "island",
+    "definition": "a piece of land surrounded by water",
+    "difficulty": 2
+  },
+  {
+    "word": "harbor",
+    "definition": "a place on the coast where vessels may find shelter",
+    "difficulty": 2
+  },
+  {
+    "word": "puzzle",
+    "definition": "a game or toy that tests ingenuity or knowledge",
+    "difficulty": 2
+  },
+  {
+    "word": "jungle",
+    "definition": "an area of land overgrown with dense vegetation",
+    "difficulty": 2
+  },
+  {
+    "word": "volcano",
+    "definition": "a mountain or hill with a vent for ejecting lava",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "definition": "a cylinder of wax with a wick used for light",
+    "difficulty": 2
+  },
+  {
+    "word": "laptop",
+    "definition": "a portable computer with an integrated screen and keyboard",
+    "difficulty": 2
+  },
+  {
+    "word": "pencil",
+    "definition": "an instrument for writing or drawing, typically with a graphite core",
+    "difficulty": 2
+  },
+  {
+    "word": "picture",
+    "definition": "a visual representation of something",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "definition": "a structure carrying a pathway over a depression or obstacle",
+    "difficulty": 2
+  },
+  {
+    "word": "camera",
+    "definition": "a device for recording visual images",
+    "difficulty": 2
+  },
+  {
+    "word": "ballet",
+    "definition": "an artistic dance form performed to music",
+    "difficulty": 2
+  },
+  {
+    "word": "castle",
+    "definition": "a large building, typically of the medieval period, fortified against attack",
+    "difficulty": 2
+  },
+  {
+    "word": "festival",
+    "definition": "a day or period of celebration, typically for cultural or religious reasons",
+    "difficulty": 2
+  },
+  {
+    "word": "pirate",
+    "definition": "a person who attacks and robs ships at sea",
+    "difficulty": 2
+  },
+  {
+    "word": "magnet",
+    "definition": "an object that produces a magnetic field",
+    "difficulty": 2
+  },
+  {
+    "word": "rocket",
+    "definition": "a cylindrical projectile that can be propelled to a great height or distance",
+    "difficulty": 2
+  },
+  {
+    "word": "scooter",
+    "definition": "a light two-wheeled motor vehicle",
+    "difficulty": 2
+  },
+
+  {
+    "word": "ubiquitous",
+    "definition": "present, appearing, or found everywhere",
+    "difficulty": 3
+  },
+  {
+    "word": "quintessential",
+    "definition": "representing the most perfect or typical example of a quality or class",
+    "difficulty": 3
+  },
+  {
+    "word": "inconsequential",
+    "definition": "not important or significant",
+    "difficulty": 3
+  },
+  {
+    "word": "perspicacious",
+    "definition": "having a ready insight into and understanding of things",
+    "difficulty": 3
+  },
+  {
+    "word": "obfuscate",
+    "definition": "to render obscure, unclear, or unintelligible",
+    "difficulty": 3
+  },
+  {
+    "word": "idiosyncratic",
+    "definition": "peculiar or individual in nature",
+    "difficulty": 3
+  },
+  {
+    "word": "verisimilitude",
+    "definition": "the appearance of being true or real",
+    "difficulty": 3
+  },
+  {
+    "word": "magnanimous",
+    "definition": "very generous or forgiving, especially toward a rival or less powerful person",
+    "difficulty": 3
+  },
+  {
+    "word": "anachronistic",
+    "definition": "belonging to a period other than that being portrayed",
+    "difficulty": 3
+  },
+  {
+    "word": "circumlocution",
+    "definition": "the use of many words where fewer would do",
+    "difficulty": 3
+  },
+  {
+    "word": "ineffable",
+    "definition": "too great or extreme to be expressed or described in words",
+    "difficulty": 3
+  },
+  {
+    "word": "pusillanimous",
+    "definition": "showing a lack of courage or determination",
+    "difficulty": 3
+  },
+  {
+    "word": "nefarious",
+    "definition": "wicked or criminal",
+    "difficulty": 3
+  },
+  {
+    "word": "perfunctory",
+    "definition": "carried out with a minimum of effort or reflection",
+    "difficulty": 3
+  },
+  {
+    "word": "recalcitrant",
+    "definition": "having an obstinately uncooperative attitude toward authority",
+    "difficulty": 3
+  },
+  {
+    "word": "facetious",
+    "definition": "treating serious issues with deliberately inappropriate humor",
+    "difficulty": 3
+  },
+  {
+    "word": "vociferous",
+    "definition": "expressing opinions or feelings loudly and forcefully",
+    "difficulty": 3
+  },
+  {
+    "word": "obstreperous",
+    "definition": "noisy and difficult to control",
+    "difficulty": 3
+  },
+  {
+    "word": "grandiloquent",
+    "definition": "pompous or extravagant in language, style, or manner",
+    "difficulty": 3
+  },
+  {
+    "word": "pulchritudinous",
+    "definition": "physically beautiful",
+    "difficulty": 3
+  },
+  {
+    "word": "sagacious",
+    "definition": "having or showing keen mental discernment and good judgment",
+    "difficulty": 3
+  },
+  {
+    "word": "tenebrous",
+    "definition": "dark, shadowy, or obscure",
+    "difficulty": 3
+  },
+  {
+    "word": "mercurial",
+    "definition": "subject to sudden or unpredictable changes of mood or mind",
+    "difficulty": 3
+  },
+  {
+    "word": "acerbic",
+    "definition": "sharp and forthright in tone or style",
+    "difficulty": 3
+  },
+  {
+    "word": "insouciant",
+    "definition": "showing a casual lack of concern; indifferent",
+    "difficulty": 3
+  },
+  {
+    "word": "anathema",
+    "definition": "something or someone that is greatly detested",
+    "difficulty": 3
+  },
+  {
+    "word": "equanimity",
+    "definition": "mental calmness, composure, and evenness of temper",
+    "difficulty": 3
+  },
+  {
+    "word": "pulchritude",
+    "definition": "physical beauty",
+    "difficulty": 3
+  },
+  {
+    "word": "intransigent",
+    "definition": "unwilling or refusing to change one's views or to agree about something",
+    "difficulty": 3
+  },
+  {
+    "word": "proclivity",
+    "definition": "a natural or habitual tendency to behave in a particular way",
+    "difficulty": 3
+  },
+  {
+    "word": "esoteric",
+    "definition": "intended for or likely to be understood by only a small number of people",
+    "difficulty": 3
+  },
+  {
+    "word": "capricious",
+    "definition": "given to sudden and unaccountable changes of mood or behavior",
+    "difficulty": 3
+  },
+  {
+    "word": "pernicious",
+    "definition": "having a harmful effect, especially in a gradual or subtle way",
+    "difficulty": 3
+  },
+  {
+    "word": "obsequious",
+    "definition": "obedient or attentive to an excessive degree",
+    "difficulty": 3
+  },
+  {
+    "word": "ubiquitous",
+    "definition": "present, appearing, or found everywhere",
+    "difficulty": 3
+  },
+  {
+    "word": "quintessential",
+    "definition": "representing the most perfect or typical example of a quality or class",
+    "difficulty": 3
+  },
+  {
+    "word": "inconsequential",
+    "definition": "not important or significant",
+    "difficulty": 3
+  },
+  {
+    "word": "perspicacious",
+    "definition": "having a ready insight into and understanding of things",
+    "difficulty": 3
+  },
+  {
+    "word": "obfuscate",
+    "definition": "to render obscure, unclear, or unintelligible",
+    "difficulty": 3
+  },
+  {
+    "word": "idiosyncratic",
+    "definition": "peculiar or individual in nature",
+    "difficulty": 3
+  },
+  {
+    "word": "verisimilitude",
+    "definition": "the appearance of being true or real",
+    "difficulty": 3
+  },
+  {
+    "word": "magnanimous",
+    "definition": "very generous or forgiving, especially toward a rival or less powerful person",
+    "difficulty": 3
+  },
+  {
+    "word": "anachronistic",
+    "definition": "belonging to a period other than that being portrayed",
+    "difficulty": 3
+  },
+  {
+    "word": "circumlocution",
+    "definition": "the use of many words where fewer would do",
+    "difficulty": 3
+  },
+  {
+    "word": "ineffable",
+    "definition": "too great or extreme to be expressed or described in words",
+    "difficulty": 3
+  },
+  {
+    "word": "pusillanimous",
+    "definition": "showing a lack of courage or determination",
+    "difficulty": 3
+  },
+  {
+    "word": "nefarious",
+    "definition": "wicked or criminal",
+    "difficulty": 3
+  },
+  {
+    "word": "perfunctory",
+    "definition": "carried out with a minimum of effort or reflection",
+    "difficulty": 3
+  },
+  {
+    "word": "recalcitrant",
+    "definition": "having an obstinately uncooperative attitude toward authority",
+    "difficulty": 3
+  },
+  {
+    "word": "facetious",
+    "definition": "treating serious issues with deliberately inappropriate humor",
+    "difficulty": 3
+  },
+  {
+    "word": "vociferous",
+    "definition": "expressing opinions or feelings loudly and forcefully",
+    "difficulty": 3
+  },
+  {
+    "word": "obstreperous",
+    "definition": "noisy and difficult to control",
+    "difficulty": 3
+  },
+  {
+    "word": "grandiloquent",
+    "definition": "pompous or extravagant in language, style, or manner",
+    "difficulty": 3
+  },
+  {
+    "word": "pulchritudinous",
+    "definition": "physically beautiful",
+    "difficulty": 3
+  },
+  {
+    "word": "sagacious",
+    "definition": "having or showing keen mental discernment and good judgment",
+    "difficulty": 3
+  },
+  {
+    "word": "tenebrous",
+    "definition": "dark, shadowy, or obscure",
+    "difficulty": 3
+  },
+  {
+    "word": "mercurial",
+    "definition": "subject to sudden or unpredictable changes of mood or mind",
+    "difficulty": 3
+  },
+  {
+    "word": "acerbic",
+    "definition": "sharp and forthright in tone or style",
+    "difficulty": 3
+  },
+  {
+    "word": "insouciant",
+    "definition": "showing a casual lack of concern; indifferent",
+    "difficulty": 3
+  },
+  {
+    "word": "anathema",
+    "definition": "something or someone that is greatly detested",
+    "difficulty": 3
+  },
+  {
+    "word": "equanimity",
+    "definition": "mental calmness, composure, and evenness of temper",
+    "difficulty": 3
+  },
+  {
+    "word": "pulchritude",
+    "definition": "physical beauty",
+    "difficulty": 3
+  },
+  {
+    "word": "intransigent",
+    "definition": "unwilling or refusing to change one's views or to agree about something",
+    "difficulty": 3
+  },
+  {
+    "word": "proclivity",
+    "definition": "a natural or habitual tendency to behave in a particular way",
+    "difficulty": 3
+  },
+  {
+    "word": "esoteric",
+    "definition": "intended for or likely to be understood by only a small number of people",
+    "difficulty": 3
+  },
+  {
+    "word": "capricious",
+    "definition": "given to sudden and unaccountable changes of mood or behavior",
+    "difficulty": 3
+  },
+  {
+    "word": "pernicious",
+    "definition": "having a harmful effect, especially in a gradual or subtle way",
+    "difficulty": 3
+  },
+  {
+    "word": "obsequious",
+    "definition": "obedient or attentive to an excessive degree",
+    "difficulty": 3
+  }
+]

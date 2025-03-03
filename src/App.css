@@ -1,38 +1,165 @@
-.App {
+:root {
+  --primary-color: #007BFF;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --secondary-text: #666;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+}
+
+/* Overall page styling */
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+}
+
+/* Two-column container for side-by-side layout */
+.two-column-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* Left column: Game layout */
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Right column: Score list */
+.right-column {
+  flex: 1;
+}
+
+/* Common game box styling */
+.game-box {
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title box styling */
+.title-box {}
+.title {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Info box styling */
+.info-box {
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info-row {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+}
+.difficulty-label {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Definition box styling */
+.definition-box {
+  text-align: left;
+}
+.definition {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: var(--secondary-text);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Score box styling */
+.score-box {
+  text-align: left;
+}
+.score-title {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+.score-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.score-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Input box styling */
+.input-box {}
+
+/* Form elements */
+.input {
+  padding: 12px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  transition: border-color var(--transition-speed);
+}
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+.button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+.button:hover {
+  background-color: #006AE6;
+  transform: scale(1.02);
+}
+.feedback {
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Timer styling */
+.timer {
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Progress indicator styling */
+.progress-indicator {
+  display: flex;
+  justify-content: center;
+}
+.progress-box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  margin: 0 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+.progress-box.filled {
+  background-color: var(--primary-color);
+}
+
+/* Lives indicator styling */
+.lives-indicator {
+  display: flex;
+  gap: 10px;
 }
