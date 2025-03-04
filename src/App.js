@@ -32,39 +32,28 @@ function LivesIndicator({ lives, total = 3 }) {
   );
 }
 
-// Helper function to shuffle an array (Fisher–Yates algorithm)
-function shuffleArray(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
 function App() {
+  // Basic state for game and score tracking.
   const [words, setWords] = useState([]);
-  const [availableWords, setAvailableWords] = useState([]); // Pool for current difficulty
   const [currentWord, setCurrentWord] = useState(null);
   const [guess, setGuess] = useState('');
   const [feedback, setFeedback] = useState('');
   const [difficulty, setDifficulty] = useState(1); // 1: Easy, 2: Medium, 3: Hard
-  const [correctCount, setCorrectCount] = useState(0); // Correct answers in current level
-  const [lives, setLives] = useState(3); // Lives for the current word
+  const [correctCount, setCorrectCount] = useState(0);
+  const [lives, setLives] = useState(3);
   const [gameOver, setGameOver] = useState(false);
   const [timeElapsed, setTimeElapsed] = useState(0); // Timer in seconds (fractional)
-  const [scoreList, setScoreList] = useState([]); // List of { word, time } objects
+  const [scoreList, setScoreList] = useState([]);
 
-  // Refs for timer interval and start time.
+  // Refs for timer, start time, and the input element.
   const timerIntervalRef = useRef(null);
   const startTimeRef = useRef(0);
-  // Ref for the input field.
   const inputRef = useRef(null);
 
-  // Replace with your actual Cloud Function URL.
+  // Cloud Function URL for TTS.
   const CLOUD_FUNCTION_URL = "https://us-central1-spelling-game-452422.cloudfunctions.net/synthesizeSpeech";
 
-  // Helper: Resets the timer state and clears any active interval.
+  // Helper: Reset timer (clear any interval and set time to 0).
   const resetTimer = () => {
     setTimeElapsed(0);
     if (timerIntervalRef.current) {
@@ -101,43 +90,25 @@ function App() {
     }
   };
 
-  // Helper: Chooses a random word from availableWords.
-  // If the pool is empty, reset it by filtering words by difficulty and shuffling.
-  const chooseRandomWord = () => {
-    let pool = availableWords;
-    if (!pool || pool.length === 0) {
-      pool = shuffleArray(words.filter((word) => word.difficulty === difficulty));
-    }
-    const nextWord = pool[0];
-    setAvailableWords(pool.slice(1));
-    return nextWord;
-  };
-
-  // Load words from the local JSON file.
+  // Fetch words from words.json only once.
   useEffect(() => {
     fetch('/words.json')
       .then(response => response.json())
       .then(data => {
         setWords(data);
-        // Initialize available words for the current difficulty.
-        const filtered = shuffleArray(data.filter(word => word.difficulty === difficulty));
-        setAvailableWords(filtered.slice(1));
-        setCurrentWord(filtered[0]);
-        setLives(3);
-        resetTimer();
       });
   }, []);
 
-  // When difficulty changes, reinitialize the pool for that difficulty.
+  // Whenever the words list or difficulty changes, select a new word.
   useEffect(() => {
     if (words.length > 0) {
-      const filtered = shuffleArray(words.filter(word => word.difficulty === difficulty));
-      setAvailableWords(filtered.slice(1));
-      setCurrentWord(filtered[0]);
+      const filtered = words.filter(word => word.difficulty === difficulty);
+      const randomIndex = Math.floor(Math.random() * filtered.length);
+      setCurrentWord(filtered[randomIndex]);
       setLives(3);
       resetTimer();
     }
-  }, [difficulty, words]);
+  }, [words, difficulty]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -161,16 +132,18 @@ function App() {
       } else {
         setCorrectCount(newCount);
         setTimeout(() => {
-          setLives(3); // Reset lives for the next word.
-          const nextWord = chooseRandomWord();
-          setCurrentWord(nextWord);
+          setLives(3);
+          // Select a new word from the current difficulty.
+          const filtered = words.filter(word => word.difficulty === difficulty);
+          const randomIndex = Math.floor(Math.random() * filtered.length);
+          setCurrentWord(filtered[randomIndex]);
           setFeedback("");
           setGuess("");
           resetTimer();
         }, 1000);
       }
     } else {
-      // Wrong answer: reduce lives and automatically replay audio to restart timer.
+      // Wrong answer: reduce lives and auto replay audio to restart timer.
       if (lives > 1) {
         setFeedback("Try again!");
         setLives(lives - 1);
@@ -183,9 +156,8 @@ function App() {
   };
 
   /**
-   * Calls the Cloud Function to fetch synthesized speech and plays the audio.
-   * When the audio's onplay event fires, the timer resets and starts counting up,
-   * and the input field is focused.
+   * Fetches audio from the Cloud Function and plays it.
+   * When audio begins playing, reset/start the timer and focus the input.
    */
   const speakWord = async () => {
     if (!currentWord) return;
@@ -223,12 +195,12 @@ function App() {
     setLives(3);
     setFeedback("");
     setGuess("");
-    setScoreList([]); // Clear the score list.
+    setScoreList([]);
     resetTimer();
     if (words.length > 0) {
-      const filtered = shuffleArray(words.filter(word => word.difficulty === 1));
-      setAvailableWords(filtered.slice(1));
-      setCurrentWord(filtered[0]);
+      const filtered = words.filter(word => word.difficulty === 1);
+      const randomIndex = Math.floor(Math.random() * filtered.length);
+      setCurrentWord(filtered[randomIndex]);
     }
   };
 
