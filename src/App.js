@@ -33,7 +33,6 @@ function LivesIndicator({ lives, total = 3 }) {
 }
 
 function App() {
-  // Basic state for game and score tracking.
   const [words, setWords] = useState([]);
   const [currentWord, setCurrentWord] = useState(null);
   const [guess, setGuess] = useState('');
@@ -42,18 +41,19 @@ function App() {
   const [correctCount, setCorrectCount] = useState(0);
   const [lives, setLives] = useState(3);
   const [gameOver, setGameOver] = useState(false);
-  const [timeElapsed, setTimeElapsed] = useState(0); // Timer in seconds (fractional)
+  const [timeElapsed, setTimeElapsed] = useState(0); // Timer (in seconds, fractional)
   const [scoreList, setScoreList] = useState([]);
+  const [submitting, setSubmitting] = useState(false); // New flag to prevent rapid submissions
 
-  // Refs for timer, start time, and the input element.
+  // Refs for timer interval and start time.
   const timerIntervalRef = useRef(null);
   const startTimeRef = useRef(0);
   const inputRef = useRef(null);
 
-  // Cloud Function URL for TTS.
+  // Cloud Function URL.
   const CLOUD_FUNCTION_URL = "https://us-central1-spelling-game-452422.cloudfunctions.net/synthesizeSpeech";
 
-  // Helper: Reset timer (clear any interval and set time to 0).
+  // Helper: Resets the timer.
   const resetTimer = () => {
     setTimeElapsed(0);
     if (timerIntervalRef.current) {
@@ -62,35 +62,27 @@ function App() {
     }
   };
 
-  // Helper: Returns a background color based on difficulty.
+  // Helper: Returns background color based on difficulty.
   const getDifficultyBackground = (level) => {
     switch (level) {
-      case 1:
-        return "#a4d4a4"; // Greenish for Easy.
-      case 2:
-        return "#ffeb3b"; // Yellow for Medium.
-      case 3:
-        return "#ff9a9a"; // Red for Hard.
-      default:
-        return "transparent";
+      case 1: return "#a4d4a4"; // Greenish for Easy.
+      case 2: return "#ffeb3b"; // Yellow for Medium.
+      case 3: return "#ff9a9a"; // Red for Hard.
+      default: return "transparent";
     }
   };
 
   // Helper: Returns the text label for difficulty.
   const getDifficultyLabel = (level) => {
     switch (level) {
-      case 1:
-        return "Easy";
-      case 2:
-        return "Medium";
-      case 3:
-        return "Hard";
-      default:
-        return "";
+      case 1: return "Easy";
+      case 2: return "Medium";
+      case 3: return "Hard";
+      default: return "";
     }
   };
 
-  // Fetch words from words.json only once.
+  // Fetch words only once.
   useEffect(() => {
     fetch('/words.json')
       .then(response => response.json())
@@ -99,7 +91,7 @@ function App() {
       });
   }, []);
 
-  // Whenever the words list or difficulty changes, select a new word.
+  // Whenever words or difficulty change, select a new word.
   useEffect(() => {
     if (words.length > 0) {
       const filtered = words.filter(word => word.difficulty === difficulty);
@@ -112,10 +104,11 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!currentWord) return;
+    if (!currentWord || submitting) return; // Prevent multiple submissions
 
     if (guess.trim().toLowerCase() === currentWord.word.toLowerCase()) {
       setFeedback("Correct!");
+      setSubmitting(true); // Lock further submissions
       // Save the correct word and its time.
       setScoreList(prev => [...prev, { word: currentWord.word, time: timeElapsed }]);
       
@@ -128,22 +121,23 @@ function App() {
           setFeedback("");
           setGuess("");
           resetTimer();
+          setSubmitting(false); // Unlock submission
         }, 1000);
       } else {
         setCorrectCount(newCount);
         setTimeout(() => {
           setLives(3);
-          // Select a new word from the current difficulty.
           const filtered = words.filter(word => word.difficulty === difficulty);
           const randomIndex = Math.floor(Math.random() * filtered.length);
           setCurrentWord(filtered[randomIndex]);
           setFeedback("");
           setGuess("");
           resetTimer();
+          setSubmitting(false); // Unlock submission
         }, 1000);
       }
     } else {
-      // Wrong answer: reduce lives and auto replay audio to restart timer.
+      // Wrong answer: reduce lives and auto replay audio.
       if (lives > 1) {
         setFeedback("Try again!");
         setLives(lives - 1);
@@ -157,7 +151,7 @@ function App() {
 
   /**
    * Fetches audio from the Cloud Function and plays it.
-   * When audio begins playing, reset/start the timer and focus the input.
+   * On audio play, resets and starts the timer, and focuses the input.
    */
   const speakWord = async () => {
     if (!currentWord) return;
@@ -224,7 +218,7 @@ function App() {
         <div className="game-box title-box">
           <h1 className="title">Spelling Test</h1>
         </div>
-        {/* Container 2: Info row with difficulty, progress, and hearts */}
+        {/* Container 2: Info row */}
         <div
           className="game-box info-box"
           style={{ backgroundColor: getDifficultyBackground(difficulty) }}
@@ -252,7 +246,7 @@ function App() {
               className="input"
               autoFocus
             />
-            <button type="submit" className="button">Submit</button>
+            <button type="submit" className="button" disabled={submitting}>Submit</button>
           </form>
           <div className="timer">Time: {timeElapsed.toFixed(2)} sec</div>
         </div>
