@@ -1,442 +1,218 @@
 [
   {
     "word": "cat",
-    "definition": "a small domesticated carnivorous mammal",
+    "ipa": "/kæt/",
+    "definition": "A small domesticated carnivorous mammal.",
     "difficulty": 1
   },
   {
     "word": "dog",
-    "definition": "a domesticated carnivorous mammal that typically has a long snout",
+    "ipa": "/dɒɡ/",
+    "definition": "A domesticated carnivorous mammal with a long snout.",
     "difficulty": 1
   },
   {
     "word": "bird",
-    "definition": "a warm-blooded egg-laying vertebrate distinguished by feathers",
+    "ipa": "/bɜːrd/",
+    "definition": "A warm-blooded egg-laying vertebrate distinguished by feathers.",
     "difficulty": 1
   },
   {
     "word": "fish",
-    "definition": "an aquatic animal that has gills",
+    "ipa": "/fɪʃ/",
+    "definition": "An aquatic animal that has gills.",
     "difficulty": 1
   },
   {
     "word": "cow",
-    "definition": "a large domesticated ungulate commonly kept for milk or beef",
+    "ipa": "/kaʊ/",
+    "definition": "A large domesticated ungulate commonly kept for milk or beef.",
     "difficulty": 1
   },
   {
     "word": "apple",
-    "definition": "a round fruit with red or green skin",
+    "ipa": "/ˈæpəl/",
+    "definition": "A round fruit with red or green skin.",
     "difficulty": 1
   },
   {
     "word": "ball",
-    "definition": "a spherical object used in games and sports",
+    "ipa": "/bɔːl/",
+    "definition": "A spherical object used in games and sports.",
     "difficulty": 1
   },
   {
     "word": "sun",
-    "definition": "the star at the center of the solar system",
+    "ipa": "/sʌn/",
+    "definition": "The star at the center of the solar system.",
     "difficulty": 1
   },
   {
     "word": "star",
-    "definition": "a fixed luminous point in the night sky",
+    "ipa": "/stɑːr/",
+    "definition": "A fixed luminous point in the night sky.",
     "difficulty": 1
   },
   {
     "word": "book",
-    "definition": "a set of written or printed pages bound together",
-    "difficulty": 1
-  },
-  {
-    "word": "chair",
-    "definition": "a piece of furniture for sitting",
-    "difficulty": 1
-  },
-  {
-    "word": "table",
-    "definition": "a piece of furniture with a flat top and one or more legs",
+    "ipa": "/bʊk/",
+    "definition": "A set of written or printed pages bound together.",
     "difficulty": 1
   },
   {
     "word": "pen",
-    "definition": "a writing instrument that uses ink",
+    "ipa": "/pɛn/",
+    "definition": "A writing instrument that uses ink.",
     "difficulty": 1
   },
   {
     "word": "cup",
-    "definition": "a small bowl-shaped container for drinking",
+    "ipa": "/kʌp/",
+    "definition": "A small bowl-shaped container for drinking.",
     "difficulty": 1
   },
   {
-    "word": "shoe",
-    "definition": "a covering for the foot, typically made of leather or canvas",
-    "difficulty": 1
+    "word": "island",
+    "ipa": "/ˈaɪlənd/",
+    "definition": "A piece of land surrounded by water.",
+    "difficulty": 2
   },
   {
-    "word": "house",
-    "definition": "a building for human habitation",
-    "difficulty": 1
-  },
-  {
-    "word": "road",
-    "definition": "a wide way leading from one place to another",
-    "difficulty": 1
-  },
-  {
-    "word": "tree",
-    "definition": "a woody perennial plant, typically having a single stem or trunk",
-    "difficulty": 1
-  },
-  {
-    "word": "flower",
-    "definition": "the seed-bearing part of a plant, often brightly colored",
-    "difficulty": 1
-  },
-  {
-    "word": "moon",
-    "definition": "the natural satellite of the earth",
-    "difficulty": 1
-  },
-  {
-    "word": "bottle",
-    "definition": "a container with a narrow neck used for storing liquids",
-    "difficulty": 1
-  },
-  {
-    "word": "key",
-    "definition": "a small piece of metal used to open or close a lock",
-    "difficulty": 1
-  },
-  {
-    "word": "balloon",
-    "definition": "a brightly colored rubber sac that can be inflated with air",
-    "difficulty": 1
-  },
-  {
-    "word": "car",
-    "definition": "a road vehicle typically with four wheels, powered by an engine",
-    "difficulty": 1
-  },
-  {
-    "word": "bus",
-    "definition": "a large motor vehicle carrying passengers by road",
-    "difficulty": 1
-  },
-  {
-    "word": "cake",
-    "definition": "a sweet baked dessert usually frosted",
-    "difficulty": 1
-  },
-  {
-    "word": "frog",
-    "definition": "a small tailless amphibian with a short body",
-    "difficulty": 1
-  },
-  {
-    "word": "duck",
-    "definition": "a waterbird with a broad blunt bill",
-    "difficulty": 1
-  },
-  {
-    "word": "pig",
-    "definition": "an omnivorous domesticated hoofed mammal with a snout",
-    "difficulty": 1
-  },
-  {
-    "word": "rain",
-    "definition": "water that falls from the clouds as drops",
-    "difficulty": 1
-  },
-  {
-    "word": "snow",
-    "definition": "atmospheric water vapor frozen into ice crystals",
-    "difficulty": 1
-  },
-  {
-    "word": "desk",
-    "definition": "a piece of furniture with a flat surface for working",
-    "difficulty": 1
-  },
-  {
-    "word": "clock",
-    "definition": "a device used to measure and indicate time",
-    "difficulty": 1
-  },
-  {
-    "word": "rhythm",
-    "definition": "a strong, regular repeated pattern of movement or sound",
+    "word": "muscle",
+    "ipa": "/ˈmʌsəl/",
+    "definition": "Body tissue that contracts to move.",
     "difficulty": 2
   },
   {
     "word": "receipt",
-    "definition": "a written acknowledgment of having received something",
+    "ipa": "/rɪˈsiːt/",
+    "definition": "A written acknowledgment of having received something.",
     "difficulty": 2
   },
   {
-    "word": "colonel",
-    "definition": "a military officer of high rank",
+    "word": "castle",
+    "ipa": "/ˈkæsəl/",
+    "definition": "A large building, typically fortified, used historically as a residence for nobility.",
     "difficulty": 2
   },
   {
-    "word": "liaison",
-    "definition": "communication or cooperation facilitating a close working relationship",
+    "word": "salmon",
+    "ipa": "/ˈsæmən/",
+    "definition": "A type of fish known for its pink flesh.",
     "difficulty": 2
   },
   {
-    "word": "mnemonic",
-    "definition": "a device or pattern that assists in remembering something",
+    "word": "whistle",
+    "ipa": "/ˈwɪsəl/",
+    "definition": "A high-pitched sound made by forcing air through a small opening.",
     "difficulty": 2
   },
   {
-    "word": "daiquiri",
-    "definition": "a cocktail of rum, citrus juice, and sugar",
+    "word": "honor",
+    "ipa": "/ˈɑːnər/",
+    "definition": "High respect or esteem.",
     "difficulty": 2
   },
   {
-    "word": "quarantine",
-    "definition": "a state of isolation to prevent the spread of disease",
+    "word": "debt",
+    "ipa": "/dɛt/",
+    "definition": "Something owed, typically money.",
     "difficulty": 2
   },
   {
-    "word": "pharaoh",
-    "definition": "a ruler in ancient Egypt",
+    "word": "doubt",
+    "ipa": "/daʊt/",
+    "definition": "A feeling of uncertainty or lack of conviction.",
     "difficulty": 2
   },
   {
-    "word": "acquiesce",
-    "definition": "to accept something reluctantly without protest",
+    "word": "subtle",
+    "ipa": "/ˈsʌtəl/",
+    "definition": "So delicate or precise as to be difficult to analyze or describe.",
     "difficulty": 2
   },
   {
-    "word": "connoisseur",
-    "definition": "an expert judge in matters of taste",
+    "word": "aisle",
+    "ipa": "/aɪl/",
+    "definition": "A passage between rows of seats.",
     "difficulty": 2
   },
   {
-    "word": "fuchsia",
-    "definition": "a vivid purplish-red color",
+    "word": "plumber",
+    "ipa": "/ˈplʌmər/",
+    "definition": "A person who installs and repairs piping systems.",
     "difficulty": 2
   },
   {
-    "word": "pseudonym",
-    "definition": "a fictitious name used by an author",
-    "difficulty": 2
+    "word": "facetious",
+    "ipa": "/fəˈsiːʃəs/",
+    "definition": "Treating serious issues with deliberately inappropriate humor.",
+    "difficulty": 3
   },
   {
-    "word": "paradigm",
-    "definition": "a typical example or model",
-    "difficulty": 2
-  },
-  {
-    "word": "phlegm",
-    "definition": "thick mucus secreted in the respiratory passages",
-    "difficulty": 2
-  },
-  {
-    "word": "embarrass",
-    "definition": "to cause someone to feel awkward or ashamed",
-    "difficulty": 2
-  },
-  {
-    "word": "occurrence",
-    "definition": "an incident or event",
-    "difficulty": 2
-  },
-  {
-    "word": "necessary",
-    "definition": "required or indispensable",
-    "difficulty": 2
-  },
-  {
-    "word": "boulevard",
-    "definition": "a wide street, often lined with trees",
-    "difficulty": 2
-  },
-  {
-    "word": "bureaucracy",
-    "definition": "a system of government managed by departments and agencies",
-    "difficulty": 2
-  },
-  {
-    "word": "rhythmic",
-    "definition": "having or relating to rhythm",
-    "difficulty": 2
-  },
-  {
-    "word": "yacht",
-    "definition": "a medium-sized sailboat used for cruising or racing",
-    "difficulty": 2
-  },
-  {
-    "word": "ubiquitous",
-    "definition": "present, appearing, or found everywhere",
+    "word": "anachronism",
+    "ipa": "/əˈnækrəˌnɪzəm/",
+    "definition": "Something out of its historical time.",
     "difficulty": 3
   },
   {
     "word": "quintessential",
-    "definition": "representing the most perfect or typical example of a quality or class",
+    "ipa": "/ˌkwɪntɪˈsɛnʃəl/",
+    "definition": "Representing the most perfect or typical example of a quality or class.",
     "difficulty": 3
   },
   {
-    "word": "inconsequential",
-    "definition": "not important or significant",
+    "word": "inconceivable",
+    "ipa": "/ˌɪnkənˈsiːvəbəl/",
+    "definition": "Not capable of being imagined or grasped mentally.",
     "difficulty": 3
   },
   {
-    "word": "perspicacious",
-    "definition": "having a ready insight into and understanding of things",
+    "word": "miscellaneous",
+    "ipa": "/ˌmɪsəˈleɪniəs/",
+    "definition": "Consisting of a variety of parts or elements.",
     "difficulty": 3
   },
   {
-    "word": "obfuscate",
-    "definition": "to render obscure, unclear, or unintelligible",
+    "word": "perseverance",
+    "ipa": "/ˌpɜːrsəˈvɪərəns/",
+    "definition": "Persistence in doing something despite difficulty.",
     "difficulty": 3
   },
   {
-    "word": "idiosyncratic",
-    "definition": "peculiar or individual in nature",
+    "word": "idiosyncrasy",
+    "ipa": "/ˌɪdiəˈsɪŋkrəsi/",
+    "definition": "A mode of behavior or way of thought peculiar to an individual.",
     "difficulty": 3
   },
   {
-    "word": "verisimilitude",
-    "definition": "the appearance of being true or real",
+    "word": "onomatopoeia",
+    "ipa": "/ˌɒnəˌmætəˈpiːə/",
+    "definition": "The formation of a word from a sound associated with what is named.",
     "difficulty": 3
   },
   {
-    "word": "magnanimous",
-    "definition": "very generous or forgiving, especially toward a rival or less powerful person",
+    "word": "antidisestablishmentarianism",
+    "ipa": "/ˌæntidaɪsɪˌstæblɪʃmənˈtɛəriənɪzəm/",
+    "definition": "Opposition to the disestablishment of a state church.",
     "difficulty": 3
   },
   {
-    "word": "anachronistic",
-    "definition": "belonging to a period other than that being portrayed",
+    "word": "incontrovertible",
+    "ipa": "/ˌɪnkɒntrəˈvɜːrtəbl/",
+    "definition": "Not open to question or dispute.",
     "difficulty": 3
   },
   {
-    "word": "circumlocution",
-    "definition": "the use of many words where fewer would do",
+    "word": "uncharacteristic",
+    "ipa": "/ˌʌnˌkærəktəˈrɪstɪk/",
+    "definition": "Not typical of a particular person or thing.",
     "difficulty": 3
   },
   {
-    "word": "ineffable",
-    "definition": "too great or extreme to be expressed or described in words",
-    "difficulty": 3
-  },
-  {
-    "word": "pusillanimous",
-    "definition": "showing a lack of courage or determination",
-    "difficulty": 3
-  },
-  {
-    "word": "nefarious",
-    "definition": "wicked or criminal",
-    "difficulty": 3
-  },
-  {
-    "word": "perfunctory",
-    "definition": "carried out with a minimum of effort or reflection",
-    "difficulty": 3
-  },
-  {
-    "word": "recalcitrant",
-    "definition": "having an obstinately uncooperative attitude toward authority",
-    "difficulty": 3
-  },
-  {
-    "word": "facetious",
-    "definition": "treating serious issues with deliberately inappropriate humor",
-    "difficulty": 3
-  },
-  {
-    "word": "vociferous",
-    "definition": "expressing opinions or feelings loudly and forcefully",
-    "difficulty": 3
-  },
-  {
-    "word": "obstreperous",
-    "definition": "noisy and difficult to control",
-    "difficulty": 3
-  },
-  {
-    "word": "grandiloquent",
-    "definition": "pompous or extravagant in language, style, or manner",
-    "difficulty": 3
-  },
-  {
-    "word": "pulchritudinous",
-    "definition": "physically beautiful",
-    "difficulty": 3
-  },
-  {
-    "word": "sagacious",
-    "definition": "having or showing keen mental discernment and good judgment",
-    "difficulty": 3
-  },
-  {
-    "word": "tenebrous",
-    "definition": "dark, shadowy, or obscure",
-    "difficulty": 3
-  },
-  {
-    "word": "mercurial",
-    "definition": "subject to sudden or unpredictable changes of mood or mind",
-    "difficulty": 3
-  },
-  {
-    "word": "acerbic",
-    "definition": "sharp and forthright in tone or style",
-    "difficulty": 3
-  },
-  {
-    "word": "insouciant",
-    "definition": "showing a casual lack of concern; indifferent",
-    "difficulty": 3
-  },
-  {
-    "word": "anathema",
-    "definition": "something or someone that is greatly detested",
-    "difficulty": 3
-  },
-  {
-    "word": "equanimity",
-    "definition": "mental calmness, composure, and evenness of temper",
-    "difficulty": 3
-  },
-  {
-    "word": "pulchritude",
-    "definition": "physical beauty",
-    "difficulty": 3
-  },
-  {
-    "word": "intransigent",
-    "definition": "unwilling or refusing to change one's views or to agree about something",
-    "difficulty": 3
-  },
-  {
-    "word": "proclivity",
-    "definition": "a natural or habitual tendency to behave in a particular way",
-    "difficulty": 3
-  },
-  {
-    "word": "esoteric",
-    "definition": "intended for or likely to be understood by only a small number of people",
-    "difficulty": 3
-  },
-  {
-    "word": "capricious",
-    "definition": "given to sudden and unaccountable changes of mood or behavior",
-    "difficulty": 3
-  },
-  {
-    "word": "pernicious",
-    "definition": "having a harmful effect, especially in a gradual or subtle way",
-    "difficulty": 3
-  },
-  {
-    "word": "obsequious",
-    "definition": "obedient or attentive to an excessive degree",
+    "word": "electromagnetism",
+    "ipa": "/ɪˌlɛktrəʊˈmæɡnətɪzəm/",
+    "definition": "The study of electromagnetic force.",
     "difficulty": 3
   }
 ]
