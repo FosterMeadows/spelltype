@@ -32,6 +32,9 @@ function LivesIndicator({ lives, total = 3 }) {
   );
 }
 
+/**
+ * App Component - Main component for the Spelling Test game.
+ */
 function App() {
   // Game state variables.
   const [hasStarted, setHasStarted] = useState(false); // Start screen state.
@@ -43,15 +46,15 @@ function App() {
   const [correctCount, setCorrectCount] = useState(0);
   const [lives, setLives] = useState(3);
   const [gameOver, setGameOver] = useState(false);
-  const [hasWon, setHasWon] = useState(false); // New win state.
+  const [hasWon, setHasWon] = useState(false); // Win state.
   const [timeElapsed, setTimeElapsed] = useState(0); // Timer in seconds (fractional)
   const [score, setScore] = useState(0);             // Running total score.
   const [missCount, setMissCount] = useState(0);       // Count of misses for current word.
   const [submitting, setSubmitting] = useState(false);
   const [ipaActive, setIpaActive] = useState(false);
-  // Add this state near the top with your other state variables.
-const [usedWords, setUsedWords] = useState([]);
 
+  // Ref for tracking words that have been used (to avoid repeats).
+  const usedWordsRef = useRef([]);
 
   // Refs for timer, input, and IPA button.
   const timerIntervalRef = useRef(null);
@@ -105,7 +108,7 @@ const [usedWords, setUsedWords] = useState([]);
     }
   };
 
-  // Fetch words.json once on mount.
+  // Fetch words.json once when the component mounts.
   useEffect(() => {
     fetch('/words.json')
       .then(response => response.json())
@@ -114,29 +117,31 @@ const [usedWords, setUsedWords] = useState([]);
       });
   }, []);
 
+  /**
+   * New Word Selection Effect:
+   * Filters words by current difficulty and excludes words already used in this round.
+   * If no available words remain, resets the usedWords list.
+   */
   useEffect(() => {
     if (words.length > 0) {
-      // Filter for words of the current difficulty that haven't been used yet.
-      const available = words.filter(
-        (word) => word.difficulty === difficulty && !usedWords.includes(word.word)
+      let available = words.filter(
+        (word) => word.difficulty === difficulty && !usedWordsRef.current.includes(word.word)
       );
-      // If there are no available words, reset the usedWords list.
       if (available.length === 0) {
-        setUsedWords([]);
-        // Recalculate available words.
-        available.push(...words.filter(word => word.difficulty === difficulty));
+        // Reset used words for this difficulty if all have been used.
+        usedWordsRef.current = [];
+        available = words.filter(word => word.difficulty === difficulty);
       }
       const randomIndex = Math.floor(Math.random() * available.length);
       const newWord = available[randomIndex];
       setCurrentWord(newWord);
-      // Mark the word as used.
-      setUsedWords((prev) => [...prev, newWord.word]);
+      // Mark this word as used.
+      usedWordsRef.current.push(newWord.word);
       setLives(3);
       resetTimer();
       setMissCount(0);
     }
   }, [words, difficulty]);
-  
 
   /**
    * Keydown listener for left Shift key.
@@ -235,7 +240,7 @@ const [usedWords, setUsedWords] = useState([]);
 
   /**
    * speakWord - Fetches and plays audio for the current word.
-   * On play, resets/starts the timer and focuses the input.
+   * On play, resets/starts the timer and focuses the input field.
    */
   const speakWord = async () => {
     if (!currentWord) return;
@@ -279,11 +284,13 @@ const [usedWords, setUsedWords] = useState([]);
     setGuess("");
     setScore(0);
     setMissCount(0);
+    usedWordsRef.current = []; // Reset used words for new game.
     resetTimer();
     if (words.length > 0) {
       const filtered = words.filter(word => word.difficulty === 1);
       const randomIndex = Math.floor(Math.random() * filtered.length);
       setCurrentWord(filtered[randomIndex]);
+      usedWordsRef.current.push(filtered[randomIndex].word);
     }
   };
 
@@ -367,16 +374,16 @@ const [usedWords, setUsedWords] = useState([]);
         <div className="game-box input-box">
           <form onSubmit={handleSubmit} className="form">
             <input
-               ref={inputRef}
-               type="text"
-               value={guess}
-               onChange={(e) => setGuess(e.target.value)}
-               placeholder="Spell the word! Click the word or press Shift..."
-               className="input"
-               autoFocus
-               autoComplete="off"
-               autoCorrect="off"
-               spellCheck="false"
+              ref={inputRef}
+              type="text"
+              value={guess}
+              onChange={(e) => setGuess(e.target.value)}
+              placeholder="Spell the word! Click the word or press Shift..."
+              className="input"
+              autoFocus
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="false"
             />
             <button type="submit" className="button submit-button" disabled={submitting}>
               Submit
