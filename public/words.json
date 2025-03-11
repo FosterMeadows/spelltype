@@ -72,6 +72,55 @@
     "difficulty": 1
   },
   {
+    "word": "hat",
+    "ipa": "/hæt/",
+    "definition": "A head covering.",
+    "difficulty": 1
+  },
+  {
+    "word": "car",
+    "ipa": "/kɑːr/",
+    "definition": "A road vehicle, typically with four wheels.",
+    "difficulty": 1
+  },
+  {
+    "word": "tree",
+    "ipa": "/triː/",
+    "definition": "A perennial plant with an elongated stem.",
+    "difficulty": 1
+  },
+  {
+    "word": "shoe",
+    "ipa": "/ʃuː/",
+    "definition": "A covering for the foot.",
+    "difficulty": 1
+  },
+  {
+    "word": "house",
+    "ipa": "/haʊs/",
+    "definition": "A building for human habitation.",
+    "difficulty": 1
+  },
+  {
+    "word": "milk",
+    "ipa": "/mɪlk/",
+    "definition": "A white liquid produced by mammals.",
+    "difficulty": 1
+  },
+  {
+    "word": "boat",
+    "ipa": "/boʊt/",
+    "definition": "A small vessel for traveling over water.",
+    "difficulty": 1
+  },
+  {
+    "word": "duck",
+    "ipa": "/dʌk/",
+    "definition": "A waterbird with a broad bill.",
+    "difficulty": 1
+  },
+
+  {
     "word": "island",
     "ipa": "/ˈaɪlənd/",
     "definition": "A piece of land surrounded by water.",
@@ -92,7 +141,7 @@
   {
     "word": "castle",
     "ipa": "/ˈkæsəl/",
-    "definition": "A large building, typically fortified, used historically as a residence for nobility.",
+    "definition": "A large building, typically fortified, used as a residence for nobility.",
     "difficulty": 2
   },
   {
@@ -128,7 +177,7 @@
   {
     "word": "subtle",
     "ipa": "/ˈsʌtəl/",
-    "definition": "So delicate or precise as to be difficult to analyze or describe.",
+    "definition": "So delicate or precise as to be difficult to analyze.",
     "difficulty": 2
   },
   {
@@ -144,6 +193,55 @@
     "difficulty": 2
   },
   {
+    "word": "biscuit",
+    "ipa": "/ˈbɪskɪt/",
+    "definition": "A small baked bread treat.",
+    "difficulty": 2
+  },
+  {
+    "word": "candle",
+    "ipa": "/ˈkændl/",
+    "definition": "A cylinder of wax with a wick used for light.",
+    "difficulty": 2
+  },
+  {
+    "word": "pillow",
+    "ipa": "/ˈpɪloʊ/",
+    "definition": "A soft support for the head while sleeping.",
+    "difficulty": 2
+  },
+  {
+    "word": "garden",
+    "ipa": "/ˈɡɑːrdən/",
+    "definition": "A plot of ground used for growing plants.",
+    "difficulty": 2
+  },
+  {
+    "word": "bridge",
+    "ipa": "/brɪdʒ/",
+    "definition": "A structure built to span a physical obstacle.",
+    "difficulty": 2
+  },
+  {
+    "word": "window",
+    "ipa": "/ˈwɪndoʊ/",
+    "definition": "An opening in a wall fitted with glass.",
+    "difficulty": 2
+  },
+  {
+    "word": "mirror",
+    "ipa": "/ˈmɪrər/",
+    "definition": "A reflective surface that forms an image.",
+    "difficulty": 2
+  },
+  {
+    "word": "sugar",
+    "ipa": "/ˈʃʊɡər/",
+    "definition": "A sweet crystalline substance.",
+    "difficulty": 2
+  },
+
+  {
     "word": "facetious",
     "ipa": "/fəˈsiːʃəs/",
     "definition": "Treating serious issues with deliberately inappropriate humor.",
@@ -158,19 +256,19 @@
   {
     "word": "quintessential",
     "ipa": "/ˌkwɪntɪˈsɛnʃəl/",
-    "definition": "Representing the most perfect or typical example of a quality or class.",
+    "definition": "Representing the most perfect example of a quality.",
     "difficulty": 3
   },
   {
     "word": "inconceivable",
     "ipa": "/ˌɪnkənˈsiːvəbəl/",
-    "definition": "Not capable of being imagined or grasped mentally.",
+    "definition": "Not capable of being imagined or grasped.",
     "difficulty": 3
   },
   {
     "word": "miscellaneous",
     "ipa": "/ˌmɪsəˈleɪniəs/",
-    "definition": "Consisting of a variety of parts or elements.",
+    "definition": "Consisting of various parts or elements.",
     "difficulty": 3
   },
   {
@@ -182,7 +280,7 @@
   {
     "word": "idiosyncrasy",
     "ipa": "/ˌɪdiəˈsɪŋkrəsi/",
-    "definition": "A mode of behavior or way of thought peculiar to an individual.",
+    "definition": "A peculiar behavior or way of thinking.",
     "difficulty": 3
   },
   {
@@ -213,6 +311,54 @@
     "word": "electromagnetism",
     "ipa": "/ɪˌlɛktrəʊˈmæɡnətɪzəm/",
     "definition": "The study of electromagnetic force.",
+    "difficulty": 3
+  },
+  {
+    "word": "sesquipedalian",
+    "ipa": "/ˌsɛskwɪpɪˈdeɪliən/",
+    "definition": "Characterized by the use of long words.",
+    "difficulty": 3
+  },
+  {
+    "word": "obfuscation",
+    "ipa": "/ˌɒbfʌˈskeɪʃən/",
+    "definition": "The act of making something obscure or unclear.",
+    "difficulty": 3
+  },
+  {
+    "word": "perfunctory",
+    "ipa": "/pərˈfʌŋktəri/",
+    "definition": "Carried out with minimal effort or reflection.",
+    "difficulty": 3
+  },
+  {
+    "word": "recalcitrant",
+    "ipa": "/rɪˈkælsɪtrənt/",
+    "definition": "Stubbornly resistant to authority.",
+    "difficulty": 3
+  },
+  {
+    "word": "loquacious",
+    "ipa": "/ləˈkweɪʃəs/",
+    "definition": "Tending to talk a great deal.",
+    "difficulty": 3
+  },
+  {
+    "word": "magnanimous",
+    "ipa": "/mæɡˈnænɪməs/",
+    "definition": "Generous and forgiving.",
+    "difficulty": 3
+  },
+  {
+    "word": "exacerbate",
+    "ipa": "/ɪɡˈzæsərbeɪt/",
+    "definition": "To make a situation worse.",
+    "difficulty": 3
+  },
+  {
+    "word": "insuperable",
+    "ipa": "/ˌɪnsjuːˈpɛrəbl/",
+    "definition": "Impossible to overcome.",
     "difficulty": 3
   }
 ]

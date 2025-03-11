@@ -49,6 +49,9 @@ function App() {
   const [missCount, setMissCount] = useState(0);       // Count of misses for current word.
   const [submitting, setSubmitting] = useState(false);
   const [ipaActive, setIpaActive] = useState(false);
+  // Add this state near the top with your other state variables.
+const [usedWords, setUsedWords] = useState([]);
+
 
   // Refs for timer, input, and IPA button.
   const timerIntervalRef = useRef(null);
@@ -111,17 +114,29 @@ function App() {
       });
   }, []);
 
-  // When words or difficulty change, select a new random word and reset counters.
   useEffect(() => {
     if (words.length > 0) {
-      const filtered = words.filter(word => word.difficulty === difficulty);
-      const randomIndex = Math.floor(Math.random() * filtered.length);
-      setCurrentWord(filtered[randomIndex]);
+      // Filter for words of the current difficulty that haven't been used yet.
+      const available = words.filter(
+        (word) => word.difficulty === difficulty && !usedWords.includes(word.word)
+      );
+      // If there are no available words, reset the usedWords list.
+      if (available.length === 0) {
+        setUsedWords([]);
+        // Recalculate available words.
+        available.push(...words.filter(word => word.difficulty === difficulty));
+      }
+      const randomIndex = Math.floor(Math.random() * available.length);
+      const newWord = available[randomIndex];
+      setCurrentWord(newWord);
+      // Mark the word as used.
+      setUsedWords((prev) => [...prev, newWord.word]);
       setLives(3);
       resetTimer();
       setMissCount(0);
     }
   }, [words, difficulty]);
+  
 
   /**
    * Keydown listener for left Shift key.
@@ -352,13 +367,16 @@ function App() {
         <div className="game-box input-box">
           <form onSubmit={handleSubmit} className="form">
             <input
-              ref={inputRef}
-              type="text"
-              value={guess}
-              onChange={(e) => setGuess(e.target.value)}
-              placeholder="Spell the word! Click the word or press Shift..."
-              className="input"
-              autoFocus
+               ref={inputRef}
+               type="text"
+               value={guess}
+               onChange={(e) => setGuess(e.target.value)}
+               placeholder="Spell the word! Click the word or press Shift..."
+               className="input"
+               autoFocus
+               autoComplete="off"
+               autoCorrect="off"
+               spellCheck="false"
             />
             <button type="submit" className="button submit-button" disabled={submitting}>
               Submit
