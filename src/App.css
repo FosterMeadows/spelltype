@@ -1,3 +1,19 @@
+/* Define the new unified color palette */
+:root {
+  --background-color: #eff0f3;       /* Page background */
+  --headline-color: #0d0d0d;         /* Headline text */
+  --paragraph-color: #2a2a2a;        /* Paragraph text */
+  --button-bg: #ff8e3c;              /* Button background & highlight */
+  --button-text: #0d0d0d;            /* Button text */
+  --main-bg: #eff0f3;                /* Main background */
+  --highlight: #ff8e3c;              /* Accent for hover/active states */
+  --secondary: #fffffe;              /* Card background (nearly white) */
+  --tertiary: #d9376e;               /* Accent for errors */
+  --panel-border: #d2d6db;           /* Panel border */
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+}
+
 /* Start Screen Overlay */
 .start-screen {
   position: fixed;
@@ -5,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(249, 249, 249, 0.95);
+  background-color: rgba(239, 240, 243, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +29,7 @@
 }
 
 .start-panel {
-  background: #fff;
+  background: var(--secondary);
   padding: 40px;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -23,40 +39,34 @@
 .start-panel h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: var(--headline-color);
 }
 
 .start-panel p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: var(--paragraph-color);
 }
 
-/* Timer: keep in code but hide from display */
+/* Hide the timer element */
 .timer {
   display: none;
 }
 
-/* Submit button: add horizontal margin for separation */
+/* Submit button: add horizontal margin */
 .submit-button {
   margin-left: 10px;
 }
 
-/* Existing styles below remain unchanged... */
-:root {
-  --primary-color: #007BFF;
-  --background-color: #f9f9f9;
-  --text-color: #333;
-  --secondary-text: #666;
-  --border-radius: 8px;
-  --transition-speed: 0.3s;
-}
-
+/* Overall page styling */
 body {
   background-color: var(--background-color);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  color: var(--text-color);
+  color: var(--paragraph-color);
 }
 
+/* Two-column container for side-by-side layout */
 .two-column-container {
   max-width: 1000px;
   margin: 20px auto;
@@ -64,6 +74,7 @@ body {
   gap: 20px;
 }
 
+/* Left column: Game layout */
 .left-column {
   flex: 2;
   display: flex;
@@ -71,23 +82,38 @@ body {
   gap: 20px;
 }
 
+/* Right column: Score and Account display */
 .right-column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* Common game box styling (cards) */
 .game-box {
-  background: #fff;
+  background: var(--secondary);
+  border: 1px solid var(--panel-border);
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+/* Hover effect for game boxes */
+.game-box:hover {
+  transform: translateY(-4px);
+}
+
+/* Title styling */
 .title {
   margin: 0;
   font-size: 2.5em;
+  color: var(--headline-color);
 }
 
+/* Info box styling */
 .info-box {
   padding: 10px;
 }
@@ -99,51 +125,93 @@ body {
 }
 .difficulty-label {
   font-weight: bold;
+  font-family: Kanit;
   font-size: 1.2em;
+  color: var(--headline-color);
 }
 
+/* Definition container styling */
 .game-box.definition-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center children horizontally */
   gap: 10px;
   text-align: left;
-  background-color: #f7f7f7;
-  padding: 10px;
+  background-color: var(--secondary);
+  padding: 20px; /* Increased padding for visual depth */
   border-radius: var(--border-radius);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
 }
 
+/* Definition line styling */
 .definition-line {
   display: inline-block;
+  font-family: "Kanit", sans-serif;
   font-size: 1.2em;
-  color: var(--primary-color);
-  background-color: #f0f8ff;
-  padding: 8px;
+  color: var(--headline-color);
+  background-color: #fff2e6;
+  padding: 10px; /* Increased padding */
   border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px auto;
   text-align: center;
 }
 
+/* Placeholder box styling */
+.placeholder-box {
+  /* Uses common game-box styling; add a heading style */
+}
+.placeholder-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.5em;
+  color: var(--headline-color);
+  margin: 0;
+}
+
+/* Progress Bar styling (replaces the five-box indicator) */
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  font-family: Kanit;
+  font-weight: 400;
+  background-color: #e6e6e6;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  font-family: Kanit;
+  background-color: var(--button-bg);
+  transition: width 0.5s ease-in-out;
+}
+
+/* Score display styling */
 .score-box {
   text-align: left;
 }
 .score-title {
   margin-top: 0;
+  font-family: Kanit;
   font-size: 1.5em;
+  color: var(--headline-color);
 }
 .score-display {
   font-size: 1.5em;
+  font-family: Kanit;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--button-bg);
   text-align: center;
   margin-top: 10px;
 }
 
+/* Form elements */
 .input {
   padding: 12px;
+  font-family: Kanit;
   font-size: 1em;
   margin-bottom: 15px;
   width: 80%;
@@ -153,77 +221,200 @@ body {
 }
 .input:focus {
   outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  border-color: var(--button-bg);
+  box-shadow: 0 0 5px rgba(255, 142, 60, 0.5);
 }
 .button {
   padding: 12px 20px;
   font-size: 1em;
-  background-color: var(--primary-color);
-  color: #fff;
+  font-family: Kanit;
+  font-style: bold;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: background-color var(--transition-speed), transform var(--transition-speed);
 }
 .button:hover {
-  background-color: #006AE6;
+  background-color: #e67c27;
   transform: scale(1.02);
 }
 .feedback {
   margin-top: 20px;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--button-bg);
 }
 
-.progress-indicator {
-  display: flex;
-  justify-content: center;
-}
-.progress-box {
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--primary-color);
-  margin: 0 5px;
-  border-radius: 4px;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
-}
-.progress-box.filled {
-  background-color: var(--primary-color);
-}
-
+/* Lives indicator styling */
 .lives-indicator {
   display: flex;
   gap: 10px;
 }
 
+/* IPA button styling */
 .ipa {
   display: inline-block;
   font-size: 2em;
   font-weight: bold;
   font-style: italic;
-  color: var(--primary-color);
-  background-color: #f0f8ff;
+  color: var(--headline-color);
+  background-color: var(--secondary);
   padding: 10px 20px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--button-bg);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   margin: 10px auto;
   cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 .ipa:hover {
-  border-color: #006AE6;
-  background-color: #e0f8ff;
+  border-color: var(--highlight);
+  background-color: #fff2e6;
+  transform: translateY(-2px);
 }
 .ipa:active,
 .ipa.active {
-  border-color: #0056b3;
-  background-color: #d0f8ff;
+  border-color: var(--highlight);
+  background-color: #ffe6d9;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
 }
 .ipa:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba(255, 142, 60, 0.5);
+}
+
+/* Kanit font classes */
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@keyframes flashFeedback {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+/* Add this class to the feedback element when you want the animation to play */
+.feedback-flash {
+  animation: flashFeedback 1s ease-in-out;
+  font-size: 1.5em; /* Increase size for visibility */
+  color: var(--button-bg); /* Use your accent color for flash */
 }

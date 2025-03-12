@@ -3,16 +3,16 @@ import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import './App.css';
 
 /**
- * ProgressIndicator renders five boxes to represent correct answers.
+ * ProgressIndicator renders a progress bar that fills as the user completes words.
+ * With 5 words per round, each word represents 20% of the bar.
  */
 function ProgressIndicator({ count, total = 5 }) {
-  const boxes = [];
-  for (let i = 0; i < total; i++) {
-    boxes.push(
-      <div key={i} className={`progress-box ${i < count ? 'filled' : ''}`}></div>
-    );
-  }
-  return <div className="progress-indicator">{boxes}</div>;
+  const progress = Math.min((count / total) * 100, 100);
+  return (
+    <div className="progress-bar-container">
+      <div className="progress-bar" style={{ width: `${progress}%` }}></div>
+    </div>
+  );
 }
 
 /**
@@ -52,6 +52,7 @@ function App() {
   const [missCount, setMissCount] = useState(0);       // Count of misses for current word.
   const [submitting, setSubmitting] = useState(false);
   const [ipaActive, setIpaActive] = useState(false);
+  const [animateFeedback, setAnimateFeedback] = useState(false);
 
   // Ref for tracking words that have been used (to avoid repeats).
   const usedWordsRef = useRef([]);
@@ -77,16 +78,16 @@ function App() {
   };
 
   /**
-   * getDifficultyBackground - Returns a lighter background color based on difficulty.
+   * getDifficultyBackground - Returns a very light color for the difficulty background.
    */
   const getDifficultyBackground = (level) => {
     switch (level) {
       case 1:
-        return "#e0f7e0"; // Light green.
+        return "#e6ffeb"; // Soft green.
       case 2:
-        return "#fff9e0"; // Pale yellow.
+        return "#fffde7"; // Soft yellow.
       case 3:
-        return "#ffe0e0"; // Pale red.
+        return "#ffe6e6"; // Soft red.
       default:
         return "transparent";
     }
@@ -112,9 +113,7 @@ function App() {
   useEffect(() => {
     fetch('/words.json')
       .then(response => response.json())
-      .then(data => {
-        setWords(data);
-      });
+      .then(data => setWords(data));
   }, []);
 
   /**
@@ -128,14 +127,12 @@ function App() {
         (word) => word.difficulty === difficulty && !usedWordsRef.current.includes(word.word)
       );
       if (available.length === 0) {
-        // Reset used words for this difficulty if all have been used.
         usedWordsRef.current = [];
         available = words.filter(word => word.difficulty === difficulty);
       }
       const randomIndex = Math.floor(Math.random() * available.length);
       const newWord = available[randomIndex];
       setCurrentWord(newWord);
-      // Mark this word as used.
       usedWordsRef.current.push(newWord.word);
       setLives(3);
       resetTimer();
@@ -144,8 +141,8 @@ function App() {
   }, [words, difficulty]);
 
   /**
-   * Keydown listener for left Shift key.
-   * When pressed, triggers the IPA button's click and simulates an active state.
+   * Keydown Listener for Left Shift:
+   * When pressed, triggers the IPA button's click and sets an active state.
    */
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -174,26 +171,20 @@ function App() {
     if (!currentWord || submitting) return;
 
     if (guess.trim().toLowerCase() === currentWord.word.toLowerCase()) {
-      // Calculate scoring:
-      // Base points: 10 for difficulty 1, 20 for 2, 30 for 3.
       let basePoints = difficulty === 1 ? 10 : difficulty === 2 ? 20 : 30;
-      // Bonus of 5 if the user never played the sound (timer is 0).
       let bonus = (timeElapsed === 0 ? 5 : 0);
-      // Penalty factor: 100% for 0 misses, 75% for 1 miss, 50% for 2+ misses.
       let penaltyFactor = missCount === 0 ? 1 : missCount === 1 ? 0.75 : 0.5;
       let pointsAwarded = Math.round((basePoints + bonus) * penaltyFactor);
 
-      // Update score and provide feedback.
       setScore(prev => prev + pointsAwarded);
       setFeedback(`Correct! +${pointsAwarded} points`);
+      setAnimateFeedback(true); // Trigger animation
       setSubmitting(true);
       setMissCount(0);
 
       const newCount = correctCount + 1;
-      // If 5 correct words in current difficulty...
       if (newCount >= 5) {
         if (difficulty < 3) {
-          // Increase difficulty if not yet at difficulty 3.
           setTimeout(() => {
             setDifficulty(difficulty + 1);
             setCorrectCount(0);
@@ -202,16 +193,16 @@ function App() {
             setGuess("");
             resetTimer();
             setSubmitting(false);
+            setAnimateFeedback(false);
           }, 1000);
         } else {
-          // At difficulty 3, reaching 5 correct means the game is won.
           setTimeout(() => {
             setHasWon(true);
             setSubmitting(false);
+            setAnimateFeedback(false);
           }, 1000);
         }
       } else {
-        // Otherwise, simply move to the next word.
         setCorrectCount(newCount);
         setTimeout(() => {
           setLives(3);
@@ -222,13 +213,14 @@ function App() {
           setGuess("");
           resetTimer();
           setSubmitting(false);
+          setAnimateFeedback(false);
         }, 1000);
       }
     } else {
-      // Incorrect guess: increment miss count and reduce lives.
       setMissCount(prev => prev + 1);
       if (lives > 1) {
         setFeedback("Try again!");
+        setAnimateFeedback(true);
         setLives(lives - 1);
         setGuess("");
         speakWord();
@@ -246,9 +238,7 @@ function App() {
     if (!currentWord) return;
     try {
       const response = await fetch(`${CLOUD_FUNCTION_URL}?text=${encodeURIComponent(currentWord.word)}`);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+      if (!response.ok) throw new Error('Network response was not ok');
       const audioBlob = await response.blob();
       const audioUrl = URL.createObjectURL(audioBlob);
       const audio = new Audio(audioUrl);
@@ -260,9 +250,7 @@ function App() {
           const now = performance.now();
           setTimeElapsed((now - startTimeRef.current) / 1000);
         }, 100);
-        if (inputRef.current) {
-          inputRef.current.focus();
-        }
+        if (inputRef.current) inputRef.current.focus();
       };
 
       audio.play();
@@ -284,7 +272,7 @@ function App() {
     setGuess("");
     setScore(0);
     setMissCount(0);
-    usedWordsRef.current = []; // Reset used words for new game.
+    usedWordsRef.current = [];
     resetTimer();
     if (words.length > 0) {
       const filtered = words.filter(word => word.difficulty === 1);
@@ -305,7 +293,7 @@ function App() {
             Type your guess in the box below and hit Enter or click Submit.
           </p>
           <p>
-            Earn points based on difficulty, with a bonus if you type correctly without hearing the word.
+            Earn points based on difficulty—with a bonus if you type correctly without hearing the word.
             Incorrect attempts reduce your potential points.
           </p>
           <button className="button" onClick={() => setHasStarted(true)}>
@@ -349,7 +337,7 @@ function App() {
       <div className="left-column">
         {/* Container 1: Title */}
         <div className="game-box title-box">
-          <h1 className="title">Spelling Test</h1>
+          <h1 className="title kanit-bold">Spell Type</h1>
         </div>
         {/* Container 2: Definition, IPA Button & TTS */}
         <div className="game-box definition-box">
@@ -392,10 +380,17 @@ function App() {
           {/* Timer remains in code but is hidden */}
           <div className="timer">{timeElapsed.toFixed(2)} sec</div>
         </div>
-        {feedback && <p className="feedback">{feedback}</p>}
+        {feedback && (
+          <p className={`feedback ${animateFeedback ? 'feedback-flash' : ''}`} key={feedback}>
+            {feedback}
+          </p>
+        )}
       </div>
-      {/* Right Column: Score Display */}
+      {/* Right Column: Placeholder and Score Display */}
       <div className="right-column">
+        <div className="game-box placeholder-box">
+          <h2 className="placeholder-title">ACCOUNT STUFF</h2>
+        </div>
         <div className="game-box score-box">
           <h2 className="score-title">Score</h2>
           <p className="score-display">{score} points</p>
